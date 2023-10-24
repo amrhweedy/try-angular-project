@@ -1,0 +1,10 @@
+.container {
+    width: 2000px;
+}
+.alert {
+    width:350px;
+    
+}
+.row {
+    gap: 30px;
+}

@@ -1,0 +1,15 @@
+<div class=" p-5 text-light ">
+    <h2 class="text-center text-dark mb-5"> our products</h2>
+    <div class="container   ">
+        <div class="row justify-content-center ">
+            <app-productitem 
+            class="col-sm-6 col-md-3 col-lg-3 alert alert-dark"
+             *ngFor="let product of products"
+             [myProduct]="product"
+
+             ></app-productitem>
+           
+        
+    </div>
+    </div>
+</div>

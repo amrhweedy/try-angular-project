@@ -1,0 +1,19 @@
+<div class="aler alert-info ">
+    <h2 class="text-center">{{myProduct.title}}</h2>
+    <img src={{myProduct.imgSrc}} alt="">
+    <div class="bg-light p-2 rounded">
+    <p class="lead fw-bold fs-5"> Quantity : {{quantity()}}</p>
+    <p class="lead fw-bold">price : {{myProduct.price}}</p>
+    <p 
+    class="lead fw-bold"
+    > desc : {{myProduct.desc}}</p>
+    <button 
+    class="btn"
+        [ngClass]="{
+            'bg-info':myProduct.quantity!=0,
+            'bg-danger': myProduct.quantity == 0
+        }"
+    
+    >{{myProduct.quantity==0?"solid out" : "Buy Now"}}</button>
+</div>
+</div> 
